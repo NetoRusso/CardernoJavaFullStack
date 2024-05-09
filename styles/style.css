@@ -1,0 +1,88 @@
+
+body{
+    overflow-x: hidden;
+    overflow-y: unset;
+}
+
+.cabeca {
+    width: 100%;
+    height: 100vh;
+}
+
+.bannerConteiner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.titulo {
+    font-family: "Special Elite", monospace;
+    font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+    color: rgb(234, 253, 236);
+    font-weight: 700;
+    text-align: center;
+    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+    position: absolute;
+    position: fixed;
+    z-index: -1;
+    margin: 0 auto;
+    border-right: 2px solid rgb(234, 253, 236);
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+.typing-animation {
+    animation: blink 300ms infinite normal, 
+    escrevendo 10s steps(40) 1s infinite normal both;
+}
+
+@keyframes escrevendo {
+    0%{
+        width: 22em;
+    }
+    50%{
+        width: 0;
+    }
+    100%{
+        width: 22em;
+    }
+}
+
+@keyframes blink {
+    from{
+        border-right-color: rgb(234, 253, 236); 
+    }
+    to{
+        border-right-color: transparent; 
+    }
+
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.videoBanner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+main {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    box-shadow: 0px -100px 50px rgba(53, 56, 55, 0.5);
+}
