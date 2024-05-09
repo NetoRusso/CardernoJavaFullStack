@@ -21,7 +21,7 @@ body{
 
 .titulo {
     font-family: "Special Elite", monospace;
-    font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+    font-size: clamp(0.875rem, 0.65rem + 1.125vw, 2rem);
     color: rgb(234, 253, 236);
     font-weight: 700;
     text-align: center;
