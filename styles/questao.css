@@ -112,15 +112,18 @@ footer{
   align-items: center;
   justify-content: center; 
   height: 30px; 
+  
 }
 
 footer p {
   color: var(--cor-white);
+  font-size: clamp(0.5rem, 0.35rem + 0.75vw, 1.25rem);
 }
 
 footer a {
   text-decoration: none;
   color: var(--cor-white);
+  font-size: clamp(0.5rem, 0.35rem + 0.75vw, 1.25rem);
 }
 
 .pagina {
