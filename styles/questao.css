@@ -1,0 +1,524 @@
+@import "./resetEVariaveis.css";
+
+
+body {
+  overflow-x: hidden;
+  overflow-y: unset;
+}
+
+.cabeca {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerConteiner {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.titulo {
+  font-family: var(--font-estilizada);
+  font-size: clamp(0.875rem, 0.65rem + 1.125vw, 2rem);
+  color: var(--cor-white);
+  font-weight: 700;
+  text-align: center;
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+  position: absolute;
+  position: fixed;
+  z-index: -1;
+  margin: 0 auto;
+  border-right: 2px solid rgb(234, 253, 236);
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.typing-animation {
+  animation: blink 300ms infinite normal,
+    escrevendo 8s steps(40) 1s infinite normal both;
+}
+
+@keyframes escrevendo {
+  0% {
+    width: 8em;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 8em;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: rgb(234, 253, 236);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.videoBanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  z-index: -2;
+}
+
+.voltar {
+  margin: 50px;
+  text-decoration: none;
+  background-color: var(--cor-white);
+  color: var(--cor-azul);
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: 100px;
+  font-family: var(--font-one);
+  font-size: 12px;
+  box-shadow: 10px 10px 20px rgba(52, 53, 56, 0.7);
+}
+
+.voltar:hover {
+  scale: 0.9;
+  background-color: var(--cor-dark);
+  color: var(--cor-white);
+}
+
+footer{
+  background-color: var(--cor-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 30px; 
+}
+
+footer p {
+  color: var(--cor-white);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--cor-white);
+}
+
+.pagina {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-fundo);
+}
+
+.instrucoes {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.titulo_instrucao {
+  font-family: var(--font-estilizada);
+  color: var(--cor-dark);
+  font-size: clamp(0.875rem, 0.65rem + 1.125vw, 2rem);
+  font-weight: 600;
+
+}
+
+.subtitulo_instrucao {
+  text-align: left;
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-one);
+
+}
+
+.instrucoes p {
+  width: 50%;
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+}
+
+.instrucoes ul,
+.instrucoes ol,
+.instrucoes dl {
+  width: 50%;
+}
+
+.instrucoes li,
+.instrucoes di {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  padding-bottom: 10px;
+}
+
+.instrucoes b {
+  font-family: var(--font-padrao);
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-weight: 500;
+}
+
+.instrucoes dt {
+  font-family: var(--font-padrao);
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-weight: 500;
+}
+
+.instrucoes hr {
+  width: 100%;
+}
+
+.instrucoes hr {
+  width: 100%;
+}
+
+/* começa aqui */
+
+/* Questão 01 */
+
+.resolucao {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.resolucao table {
+  border: solid 2px var(--cor-dark);
+}
+
+.resolucao th {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  font-weight: 600;
+  padding: 5px;
+  text-align: left;
+  border: solid 2px var(--cor-dark);
+}
+
+.resolucao tr {
+  padding: auto;
+}
+
+.resolucao td {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  padding: 5px;
+  border: solid 2px var(--cor-dark);
+}
+
+.titulo_tabela {
+  text-align: center;
+}
+
+/* Questão 02 */
+
+.resolucao02 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+  gap: 50px;
+}
+
+.resolucao02 hr {
+  width: 100%;
+}
+
+.naoOrdenada {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.naoOrdenada h4 {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  color: var(--cor-dark);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.naoOrdenada li {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  color: var(--cor-dark);
+  font-weight: 400;
+  padding: 10px;
+}
+
+.naoOrdenada ul {
+  margin-bottom: 50px;
+}
+
+.naoOrdenada hr {
+  width: 100%;
+}
+
+.ordenada {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ordenada h4 {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  color: var(--cor-dark);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.ordenada li {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  color: var(--cor-dark);
+  font-weight: 400;
+  padding: 10px;
+}
+
+.ordenada ol {
+  margin-bottom: 50px;
+}
+
+.ordenada hr {
+  width: 100%;
+}
+
+.definicao {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.definicao h4,
+.definicao dt {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  color: var(--cor-dark);
+  font-weight: 700;
+  margin: 60px 0 20px 0;
+}
+
+.definicao di {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  color: var(--cor-dark);
+  font-weight: 400;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* Resolção 03 */
+
+.resolucao03 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+  gap: 50px;
+}
+
+.titulo_resolucao03 {
+  font-family: var(--font-estilizada);
+  color: var(--cor-dark);
+  font-size: clamp(0.875rem, 0.65rem + 1.125vw, 2rem);
+  font-weight: 600;
+}
+
+.resolucao03 h3 {
+  margin-top: 30px;
+  font-family: var(--font-one);
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
+
+.artigos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  gap: 10vw;
+}
+
+.artigo {
+  flex: 50%;
+}
+
+.artigo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.artigo p {
+  width: 100%;
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+}
+
+.artigo01 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
+.artigo01 p {
+  text-align: right;
+}
+
+.artigo02 p {
+  text-align: left;
+}
+
+.resolucao03 hr {
+  width: 100%;
+}
+
+/* Questão 04 */
+
+.resolucao04 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+  gap: 50px;
+}
+
+.titulo_resolucao04 {
+  font-family: var(--font-estilizada);
+  color: var(--cor-dark);
+  font-size: clamp(0.875rem, 0.65rem + 1.125vw, 2rem);
+  font-weight: 600;
+}
+
+.resolucao04 h3 {
+  margin-top: 30px;
+  font-family: var(--font-one);
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
+
+.textos {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10vw;
+}
+
+.texto {
+  width: 80%;
+
+}
+
+.texto p {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  align-self: center;
+}
+
+/* questão 05 */
+
+.resolucao05 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+  gap: 50px;
+}
+
+.resolucao05 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.resolucao05 form input {
+  padding: 5px;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.resolucao05 form label,
+.resolucao05 form p {
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+  font-family: var(--font-padrao);
+  align-self: center;
+  text-align: left;
+}
+
+.masc,
+.fem,
+.esp,
+.mus,
+.leit {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.generoForm {
+  gap: 5px
+}
+
+.escolhasForm {
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+  margin: 20px;
+}
+.paises {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 2vw;
+}
+
+.paises select {
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.resolucao05 form button {
+  width: 20%;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.resolucao05 hr {
+  width: 100%;
+}

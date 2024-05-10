@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Neto Russo">
+  <title>|| Questão 05🌟</title>
+  <link rel="icon" type="image/png" href="../../src/img/open-book.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/resetEVariaveis.css">
+  <link rel="stylesheet" href="../../styles/questao.css">
+</head>
+
+<body>
+  <!-- Banner -->
+  <div class="cabeca" id="cabeca">
+    <div class="bannerConteiner">
+      <h1 class="titulo typing-animation"> Questão 05</h1>
+      <div class="banner">
+        <video id="videoBanner" class="videoBanner" autoplay loop muted>
+          <source src="../../src/img/2316814_Neural_Networks_Deep.mp4" type='video/mp4' />
+        </video>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html" class="voltar"> Voltar</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="pagina">
+    <!-- Instruções -->
+    <section class="instrucoes">
+      <hr>
+      <br>
+      <h2 class="titulo_instrucao">Exercício 05</h2>
+      <h3 class="subtitulo_instrucao">Instruções</h3>
+      <p>
+        Crie um formulário de cadastro simples para um site de registro de usuários. O formulário deve incluir
+        os seguintes campos:
+        <ul>
+          <li>
+            Nome (input do tipo texto)
+          </li>
+          <li>
+            E-mail (input do tipo e-mail)
+          </li>
+          <li>
+            Senha (input do tipo password)
+          </li>
+          <li>
+            Confirmação de Senha (input do tipo password)
+          </li>
+          <li>
+            Gênero (radio buttons para Masculino, Feminino)
+          </li>
+          <li>
+            Interesses (checkboxes para Esportes, Música, Leitura)
+          </li>
+          <li>
+            País de Residência (select com opções de pelo menos 3 países)
+          </li>
+          <li>
+            Botão de Envio
+          </li>
+        </ul>
+      </p>
+      <p>
+        Além disso, inclua rótulos (labels) para cada campo e estruture o formulário de maneira organizada
+      </p>
+      <hr>
+    </section>
+    <section class="resolucao05">
+      <form action="#">
+        <div class="nomeForm">
+          <label for="nome">Nome:*</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome completo" required minlength="6">
+        </div>
+        <div class="emailForm">
+          <label for="email">E-mail:*</label>
+          <input type="email" name="email" id="email" placeholder="email@dominio.com" required>
+        </div>
+        <div class="senhaForm">
+          <label for="senha">Senha:*</label>
+          <input type="password" name="senha" id="senha" placeholder="senha" required minlength="8">
+        </div>
+        <div class="confirmaSenhaForm">
+          <label for="confirmaSenha">Confirme a senha:*</label>
+          <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="repita a senha">
+        </div>
+        <div class="escolhasForm">
+
+          <div class="generoForm">
+            <label for="genero">Gênero</label>
+            <div class="masc">
+              <input type="radio" name="genero" id="generoMasculino" value="Masculino">
+              <p>Masculino</p>
+            </div>
+            <div class="fem">
+              <input type="radio" name="genero" id="generoFeminino" value="Feminino">
+              <p>Feminino</p>
+            </div>
+          </div>
+
+          <div class="checkForm">
+            <label for="interesses">Interesses</label>
+            <div class="esp">
+              <input type="checkbox" name="interesses" id="interessesEsportes" value="Esportes">
+              <p>Esportes</p>
+            </div>
+            <div class="mus">
+              <input type="checkbox" name="interesses" id="interessesMusica" value="Musica">
+              <p>Música</p>
+            </div>
+            <div class="leit">
+              <input type="checkbox" name="interesses" id="interessesLeitura" value="Leitura">
+              <p>Leitura</p>
+            </div>
+          </div>
+        </div>
+        <div class="paises">
+
+          <label for="paises">País de Residêcia:</label>
+          <select name="paises" id="paises">
+            <option value="default">Escolha um País</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Bolívia">Bolívia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colômbia">Colômbia</option>
+            <option value="Equador">Equador</option>
+            <option value="Guiana">Guiana</option>
+            <option value="Paraguai">Paraguai</option>
+            <option value="Peru">Peru</option>
+            <option value="Suriname">Suriname</option>
+            <option value="Uruguai">Uruguai</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+        <button>Enviar</button>
+      </form>
+      <br>
+      <hr>
+    </section>
+    <a href="#cabeca">⬆️</a>
+    <br><br>
+  </div>
+  <footer>
+    <p>
+      Criado, Pensado e desenvolvido por <a href="https://www.linkedin.com/in/neto-russo/" target="_blank"
+        title="linkedin"> Neto Russo </a> &copy;
+    </p>
+  </footer>
+</body>
+
+</html>
